@@ -14,22 +14,24 @@ p {
 
 .logo{
   display: block;
-  margin-left: 20px auto;
+  margin-left: 20px;
   width: 100px;
   height: auto;
 }
 
 .pages{
+  width:100%
   position: relative;
+  overflow: visible;
 }
 
 .container{
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
+  min-height: 75%;
   width: 100%;
-  margin: auto;
-  height: 75%;
+  margin-top:0;
   background: rgb(231,231,244);
   background: linear-gradient(90deg, rgba(231,231,244,1) 0%,
   rgba(81,159,199,0.5847953216374269) 100%);
@@ -52,6 +54,7 @@ p {
     display: block;
     margin-right: 150px;
     margin-top: 30px;
+    margin-bottom: 20px;
     width: 350px;
     height: auto;
     border-width: 3px;
@@ -95,6 +98,8 @@ table{
   border-width: 2px;
   border-style: solid;
   margin-left: 8%;
+  margin-top: 20px;
+  margin-bottom: 30px;
 }
 th, td {
     border: 1px solid black; /* Border for all cells */
@@ -102,13 +107,18 @@ th, td {
 }
 .education-table {
     display: flex;
-    align-items: center; /* Aligns table in the middle */
 }
 
 .gallery {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-right: 15px;
+    margin-left: 15px;
     display: flex;
     gap: 15px; /* Spacing between images */
     text-align: center;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
 }
 
 .gallery-item {
@@ -119,9 +129,9 @@ th, td {
 }
 
 .gallery-item img {
-    width: 100%;
+    width: 200px;
     height: auto;
-    max-width: 200px;
+    max-width: 500px;
     border-radius: 10px; /* Optional: rounded corners */
 }
 
